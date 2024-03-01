@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konstruct</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#!"><i class="material-icons">info_outline</i>About</a></li>
+        <li><a href="#!"><i class="material-icons">work_outline</i>Work</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Contact</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Close</a></li>
+    </ul>
     <header class="header">
         <div class="container">
             <img class="header__logo" src="img/logo-header.png" alt="logo">
@@ -24,6 +35,11 @@
                     <img class="navbar__logo" src="img/nav-logo-black.png" alt="Logo black">
                 </div>
                 <div class="navbar__flex-right">
+                    <a class="burger sidenav-trigger" data-target="slide-out">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </a>
                     <ul class="navbar__menu">
                         <li><a href="" class="navbar__menu-item">Home</a></li>
                         <li><a href="" class="navbar__menu-item">About</a></li>
@@ -155,13 +171,10 @@
                     <p class="p footer__flex-info email">info@konstruct.com</p>
                 </div>
                 <div class="footer__flex-social">
-                        <a href=""><img class="footer__img"
-                                    src="img/footer-fb.png" alt="Facebook"></a>
-                        <a href=""><img class="footer__img"
-                                    src="img/footer-twitter.png" alt="Twitter"></a>
-                        <a href=""><img class="footer__img"
-                                    src="img/footer-google.png" alt="Google"></a>
-                   
+                    <a href=""><img class="footer__img" src="img/footer-fb.png" alt="Facebook"></a>
+                    <a href=""><img class="footer__img" src="img/footer-twitter.png" alt="Twitter"></a>
+                    <a href=""><img class="footer__img" src="img/footer-google.png" alt="Google"></a>
+
                 </div>
             </div>
         </div>
@@ -169,7 +182,8 @@
             <p class="p footer__flex-info">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
         </div>
     </footer>
-
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
